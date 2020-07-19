@@ -2,7 +2,7 @@
  
 New update 
 
-Please download and test this app with release version with link: https://github.com/junitvn/coderschool/releases/tag/v1.0
+Please download and test this app with release version at: https://github.com/junitvn/coderschool/releases/tag/v1.0
 
 Week 3 - Homework - Rock, Paper, Scissors 🧗‍🗞️✂️
 
