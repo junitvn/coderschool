@@ -1,5 +1,9 @@
 ﻿#Coderschool Assignment App
-New update:
+ 
+New update 
+
+Please download and test this app with release version with link: https://github.com/junitvn/coderschool/releases/tag/v1.0
+
 Week 3 - Homework - Rock, Paper, Scissors 🧗‍🗞️✂️
 
 [x] User can select Rock, Paper, or Scissors
