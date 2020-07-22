@@ -27,3 +27,7 @@ Week 3 - Homework - Rock, Paper, Scissors 🧗‍🗞️✂️
 Livecap
 
 ![](./gif/week3.gif)
+
+Week 4 - Todo App with Redux Hooks
+
+![](./gif/todoapp.gif)
