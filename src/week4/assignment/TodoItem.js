@@ -20,14 +20,16 @@ const TodoItem = (props) => {
     navigation.navigate("TodoDetail", { item, index })
   }
 
-  return <TouchableOpacity style={styles.itemContainer} onPress={onItemClick}>
+  return <View style={styles.itemContainer}>
     <CheckBox
       disabled={false}
       value={toggleCheckBox}
       onValueChange={onCheckBoxChangeValue}
     />
-    <Text style={[styles.text], toggleCheckBox ? { textDecorationLine: 'line-through' } : {}}>{item.text}</Text>
-  </TouchableOpacity>
+    <TouchableOpacity onPress={onItemClick}>
+      <Text style={[styles.text], toggleCheckBox ? { textDecorationLine: 'line-through' } : {}}>{item.text}</Text>
+    </TouchableOpacity>
+  </View>
 }
 
 
