@@ -14,62 +14,62 @@ const data = [
     {
         name: "Jonathan",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar1.jpg")
+        avatar: require("../../assets/avatar1.jpg")
     },
     {
         name: "Emily",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar2.jpg")
+        avatar: require("../../assets/avatar2.jpg")
     },
     {
         name: "Obama",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar3.jpg")
+        avatar: require("../../assets/avatar3.jpg")
     },
     {
         name: "Craacker",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar4.jpg")
+        avatar: require("../../assets/avatar4.jpg")
     },
     {
         name: "Linh Anh",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar5.jpg")
+        avatar: require("../../assets/avatar5.jpg")
     },
     {
         name: "Dieu Linh",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar6.jpg")
+        avatar: require("../../assets/avatar6.jpg")
     },
     {
         name: "Huyen Trang",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar7.jpg")
+        avatar: require("../../assets/avatar7.jpg")
     },
     {
         name: "Huong",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar8.jpg")
+        avatar: require("../../assets/avatar8.jpg")
     },
     {
         name: "Ngoc",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar9.jpg")
+        avatar: require("../../assets/avatar9.jpg")
     },
     {
         name: "Nhi",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar1.jpg")
+        avatar: require("../../assets/avatar1.jpg")
     },
     {
         name: "Ngoc Han",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar2.jpg")
+        avatar: require("../../assets/avatar2.jpg")
     },
     {
         name: "Ngo Thi Thao",
         lastMessage: "Okela",
-        avatar: require("../assets/avatar3.jpg")
+        avatar: require("../../assets/avatar3.jpg")
     },
 ]
 
