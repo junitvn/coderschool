@@ -13,7 +13,7 @@ const Drawer = createDrawerNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Todo">
+      <Drawer.Navigator initialRouteName="Zalo">
         <Drawer.Screen name="Week 3" component={CurrencyConvert} />
         <Drawer.Screen name="Homework 3" component={Homework} />
         <Drawer.Screen name="Home" component={Home} />

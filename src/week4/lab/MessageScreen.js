@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { TextInput } from 'react-native-gesture-handler';
+import { GiftedChat } from 'react-native-gifted-chat';
 
 const MessageScreen = (props) => {
-    console.log(props.route.params);
     const { item } = props.route.params;
+    const [messages, setMessages] = useState([]);
+    useEffect(() => {
+        setMessages([
+            {
+                _id: 1,
+                text: 'Hello developer',
+                createdAt: new Date(),
+                user: {
+                    _id: 2,
+                    name: 'React Native',
+                    avatar: 'https://placeimg.com/140/140/any',
+                },
+            },
+        ])
+    }, [])
+
+    const onSend = useCallback((messages = []) => {
+        setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+    }, [])
+
     return <View style={{ flex: 1 }}>
         <View style={[styles.headerContainer]}>
             <TouchableOpacity onPress={() => { props.navigation.goBack() }} >
@@ -13,14 +33,13 @@ const MessageScreen = (props) => {
             </TouchableOpacity>
             <Text style={styles.textName}>{item.name}</Text>
         </View>
-        <View style={{ flex: 1, }}>
-            <View style={{ flex: 1 }}></View>
-            <View style={styles.inputMessageContainer}>
-                <Ionicons name="happy-outline" style={styles.iconSend} />
-                <TextInput style={styles.inputText} placeholder="Enter message..."/>
-                <Ionicons name="md-paper-plane-sharp" style={styles.iconSend} />
-            </View>
-        </View>
+        <GiftedChat
+            messages={messages}
+            onSend={messages => onSend(messages)}
+            user={{
+                _id: 2,
+            }}
+        />
     </View>
 }
 
@@ -50,7 +69,7 @@ const styles = StyleSheet.create({
         height: 50,
         borderTopColor: 'gray',
         borderTopWidth: 0.5,
-        flexDirection:'row',
+        flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: 10
